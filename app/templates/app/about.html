@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet"  media="screen and (max-width:1170px)" href="{% static '/css/phone.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="{% static '/uploads/logo.jpeg' %}" alt="Myonlinemeals.com">
+        </div>
+        <ul>
+            <li class="item"><a href="/">Home</a></li>
+            
+            <li class="item"><a href="#about">About us</a></li>
+            <li class="item"><a href="#contact">Contact us</a></li>
+            <!-- <li class="item"><h1 style="color: white ;">Welcome</h1></li> -->
+
+            
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Better food for more people</h1>
+        <p>We are commited to nurturing s neutral platform and we are helping food establishment maintain high standards through Hyperpure. 
+            Food Hygiene Ratings is a coveted mark of quality among out restaurant partners.  </p>
+
+    </section>
+    <section class="service-container">
+        <h1 class="h-primary center">About Us</h1>
+        <div id="about">
+        <div id="services">
+            <div class="box">
+                <!-- <img src="/static/uploads/pz.jpeg" alt=""> -->
+                <h2 class="h-secondary center">Who are we?</h2>
+                <p class="center">Launched in 2010, Our technology platform connects customers, 
+                    restaurant partners and delivery partners, serving their multiple needs.
+                     Customers use our platform to search and discover restaurants, 
+                     read and write customer generated reviews and view and upload photos,
+                      order food delivery, book a table and make payments while dining-out at restaurants.
+                       On the other hand, we provide restaurant partners with industry-specific marketing tools which enable them to engage and acquire customers to grow their business while also providing a reliable and efficient last mile delivery service. We also operate a one-stop procurement solution, Hyperpure, which supplies high quality ingredients and kitchen products to restaurant partners. We also provide our delivery partners with transparent and flexible earning opportunities.</p>
+            </div>
+            <div class="box">
+                <!-- <img src="/static/uploads/buk.jpeg" alt=""> -->
+                <h2 class="h-secondary center">Our mission</h2>
+                <p class="center">Our mission is to elevate the quality of life for the urban consumer with unparalleled convenience. Convenience is what makes us tick. It's what makes us get out of bed and say, "Let's do this."</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact us</h1>
+        <div id="contact-box">
+            <form action="" method="post">
+
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="emailname" id="Email" placeholder="Enter your Email">
+                </div>
+                <div class="form-group">
+                    <label for="Phone">Phone number:</label>
+                    <input type="Phone number" name="phonenumber" id="phone number" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="message">message:</label>
+                    <textarea name="Message" id="message" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <div class="center">
+            Copyright &copy;www.agsinghwebsite.All rights reserved!
+        </div>
+    </footer>
+</body>
+
